@@ -1,4 +1,18 @@
-# GPO Startup Script: Practical Download
+---
+layout: post
+title: GPO Startup Script - Practical Download
+date: 2012-02-07 20:46
+author: VertigoRay
+comments: true
+categories:
+- Active Directory
+- AD
+- GPO
+- Group Policy
+- posh
+- powershell
+---
+# GPO Startup Script - Practical Download
 
 I like logs of things I'm doing, so a simple log for something like this is to use PowerShell's `Start-Transcript` function.
 It should be the first command that you run.
