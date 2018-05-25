@@ -45,7 +45,7 @@ Now, we just have to make that a one liner and pass it to the `powershell.exe` v
 powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -NoProfile -NonInteractive -Command "Start-Transcript -LiteralPath ('{0}\Logs\Download-HiddenPowershell.ps1.log' -f $env:SystemRoot) -IncludeInvocationHeader -Force; $path = ('{0}\UNT' -f $env:SystemRoot); $uri = 'https://raw.githubusercontent.com/UNT-CAS/HiddenPowershell/v1.0/HiddenPowershell.vbs'; Write-Host ('# Path: {0}' -f $path); Write-Host ('# URI: {0}' -f $uri); Write-Host '# Ensure Path Exists ...'; New-Item -Type 'Directory' -Path $path -Force; Write-Host ('# Net.ServicePointManager: {0}' -f [Net.ServicePointManager]::SecurityProtocol); Write-Host '# Setting TLS 1.2 ...'; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Write-Host ('# Net.ServicePointManager: {0}' -f [Net.ServicePointManager]::SecurityProtocol); Write-Host '# Downloading from URI ...'; Invoke-WebRequest -Uri $uri -OutFile ('{0}\HiddenPowershell.vbs' -f $path) -UseBasicParsing -Verbose 4>&1; Stop-Transcript"
 ```
 
-Too easy, right? 🤔
+Too easy, right? :thinking:
 
 # Issue
 
