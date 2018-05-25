@@ -1,14 +1,17 @@
 ---
 layout: post
-title: GPO Startup Script Practical Download
+title: GPO Startup Script - Practical PowerShell Download Command
 # date: 0-02-07 20:46
 author: VertigoRay
 comments: true
 categories: [Group Policy]
 ---
-# GPO Startup Script - Practical Download
+Like most sysadmins that manage a lot of computers, I have a need for startup scripts.
+Also, I deploy those startup scripts to the computer via GPO.
+However, I prefer to download those scripts to the machine and run them locally.
+This allows them to run even if the computer isn't currently connected to the network, like a laptop that's off-site.
 
-I like logs of things I'm doing, so a simple log for something like this is to use PowerShell's `Start-Transcript` function.
+Additionally, I like logs of things I'm doing, so a simple log for something like this is to use PowerShell's `Start-Transcript` function.
 It should be the first command that you run.
 We'll also need to send stuff to the log; `Write-Host` or `Write-Output` will do the job well.
 Here's the download command that we use, including a legit `$path`:
