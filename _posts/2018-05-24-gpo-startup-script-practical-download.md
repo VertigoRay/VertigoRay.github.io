@@ -1,10 +1,13 @@
 ---
 layout: post
 title: GPO Startup Script - Practical PowerShell Download Command
-# date: 0-02-07 20:46
 author: VertigoRay
 comments: true
-categories: [Group Policy]
+categories:
+- GPO
+- Group Policy
+- POSH
+- PowerShell
 ---
 Like most sysadmins that manage a lot of computers, I have a need for startup scripts.
 Also, I deploy those startup scripts to the computer via GPO.
@@ -45,7 +48,7 @@ Now, we just have to make that a one liner and pass it to the `powershell.exe` v
 powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -NoProfile -NonInteractive -Command "Start-Transcript -LiteralPath ('{0}\Logs\Download-HiddenPowershell.ps1.log' -f $env:SystemRoot) -IncludeInvocationHeader -Force; $path = ('{0}\UNT' -f $env:SystemRoot); $uri = 'https://raw.githubusercontent.com/UNT-CAS/HiddenPowershell/v1.0/HiddenPowershell.vbs'; Write-Host ('# Path: {0}' -f $path); Write-Host ('# URI: {0}' -f $uri); Write-Host '# Ensure Path Exists ...'; New-Item -Type 'Directory' -Path $path -Force; Write-Host ('# Net.ServicePointManager: {0}' -f [Net.ServicePointManager]::SecurityProtocol); Write-Host '# Setting TLS 1.2 ...'; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Write-Host ('# Net.ServicePointManager: {0}' -f [Net.ServicePointManager]::SecurityProtocol); Write-Host '# Downloading from URI ...'; Invoke-WebRequest -Uri $uri -OutFile ('{0}\HiddenPowershell.vbs' -f $path) -UseBasicParsing -Verbose 4>&1; Stop-Transcript"
 ```
 
-Too easy, right? :thinking:
+Too easy, right? 🤔
 
 # Issue
 
@@ -168,10 +171,10 @@ powershell.exe -W H -Ex B -NoP -NonI "$a='HiddenPowershell';$b=$env:SystemRoot;S
 
 Yah!!
 That's **516** characters of arguments!!
-We can event put the URL in a shortener, as previously suggested, to get it down to **473** characters:
+We can event put the URL in a shortener, as previously suggested, to get it down to **479** characters:
 
 ```powershell
-powershell.exe -W H -Ex B -NoP -NonI "$a='HiddenPowershell';$b=$env:SystemRoot;Start-Transcript $b'\Logs\Download-'$a'.ps1.log' -I -F;$c=$b+'\UNT';$d='https://goo.gl/PZcPxi';'# Path: '+$c;'# URI: '+$d;'# Ensure Path Exists …';ni -I D $c -F;$e=[Net.ServicePointManager]::SecurityProtocol;$f='Net.ServicePointManager';'# '+$f+': '+$e;'# Setting TLS 1.2 …';$e=[Net.SecurityProtocolType]::Tls12;'# '+$f+': '+$e;'# Downloading from URI …';iwr $d -O $c'\'$a'.vbs' -UseB -V 4>&1;Stop-Transcript"
+powershell.exe -W H -Ex B -NoP -NonI "$a='HiddenPowershell';$b=$env:SystemRoot;Start-Transcript $b'\Logs\Download-'$a'.ps1.log' -I -F;$c=$b+'\UNT';$d='https://goo.gl/PZcPxi' -f $a;'# Path: '+$c;'# URI: '+$d;'# Ensure Path Exists …';ni -I D $c -F;$e=[Net.ServicePointManager]::SecurityProtocol;$f='Net.ServicePointManager';'# '+$f+': '+$e;'# Setting TLS 1.2 …';$e=[Net.SecurityProtocolType]::Tls12;'# '+$f+': '+$e;'# Downloading from URI …';iwr $d -O $c'\'$a'.vbs' -UseB -V 4>&1;Stop-Transcript"
 ```
 
 Now, just put it in GPO's *Script Parameters* field; as shown:
@@ -180,15 +183,26 @@ Now, just put it in GPO's *Script Parameters* field; as shown:
 
 # Notes
 
-- If you don't have room for it, remove the `Stop-Transcript` from the end.
-  - It just gives a nice log footer with an *end time*; thus you can calculate total run time, if you so desire.
-  - Additionally, you don't *have* to do logging at all.
-- If you have a longer PowerShell script that you want run on mobile devices, consider:
-  - Drop the script in a repo.
-    - Public: github.com or gist.github.com work great.
-    - Private: gitlab.com works great. Just make a [Personal Access Token](https://gitlab.com/profile/personal_access_tokens) and [tack it on the end of the URL](https://gitlab.com/help/api/README.md#personal-access-tokens) for the *raw* download, like this:
-      - `https://gitlab.com/UNT-CAS/StartupScripts/raw/master/deploy.ps1?private_token=9koXpg98eAheJpvBs5tK`
-  - Download the script with the first Startup Script.
-    - Be sure to download the *raw* version of the script.
-  - Execute it with a second Startup Script.
-    - GPO Startup Scripts are run in order; hence the ability to order them.
+Of course, the command is totally unreadable to most people, but it sure is short! :smirk:
+Be sure to write some documentation and/or [create a description on the GPO with some details](https://blogs.technet.microsoft.com/grouppolicy/2011/07/13/how-to-add-comment-for-a-gpo-with-powershell/).
+Maybe I should write an updated blog post about this.
+
+I have this implemented in production to make [HiddenPowershell](https://github.com/UNT-CAS/HiddenPowershell) and [HiddenRun](https://github.com/UNT-CAS/HiddenRun) available on all of the systems that I manage.
+This allows me to execute PowerShell and other process completely hidden.
+Check out those if your interested.
+
+If you don't have room for it, remove the `Stop-Transcript` from the end.
+
+- It just gives a nice log footer with an *end time*; thus you can calculate total run time, if you so desire.
+- Additionally, you don't *have* to do logging at all.
+
+If you have a longer PowerShell script that you want run on mobile devices, implement something like this:
+
+- Drop the script in a repo.
+  - Public: github.com or gist.github.com work great.
+  - Private: gitlab.com works great. Just make a [Personal Access Token](https://gitlab.com/profile/personal_access_tokens) and [tack it on the end of the URL](https://gitlab.com/help/api/README.md#personal-access-tokens) for the *raw* download, like this:
+    - `https://gitlab.com/UNT-CAS/StartupScripts/raw/master/deploy.ps1?private_token=9koXpg98eAheJpvBs5tK`
+- Download the script with the first Startup Script.
+  - Be sure to download the *raw* version of the script.
+- Execute it with a second Startup Script.
+  - GPO Startup Scripts are run in order; hence the ability to order them.
