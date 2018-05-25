@@ -171,7 +171,7 @@ powershell.exe -W H -Ex B -NoP -NonI "$a='HiddenPowershell';$b=$env:SystemRoot;S
 
 Yah!!
 That's **516** characters of arguments!!
-We can event put the URL in a shortener, as previously suggested, to get it down to **479** characters:
+We can even put the URL in a shortener, as previously suggested, to get it down to **479** characters:
 
 ```powershell
 powershell.exe -W H -Ex B -NoP -NonI "$a='HiddenPowershell';$b=$env:SystemRoot;Start-Transcript $b'\Logs\Download-'$a'.ps1.log' -I -F;$c=$b+'\UNT';$d='https://goo.gl/PZcPxi';'# Path: '+$c;'# URI: '+$d;'# Ensure Path Exists …';ni -I D $c -F;$e=[Net.ServicePointManager]::SecurityProtocol;$f='Net.ServicePointManager';'# '+$f+': '+$e;'# Setting TLS 1.2 …';$e=[Net.SecurityProtocolType]::Tls12;'# '+$f+': '+$e;'# Downloading from URI …';iwr $d -O $c'\'$a'.vbs' -UseB -V 4>&1;Stop-Transcript"
