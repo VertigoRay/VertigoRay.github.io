@@ -39,13 +39,20 @@ Invoke-WebRequest -Uri $uri -OutFile ('{0}\HiddenPowershell.vbs' -f $path) -UseB
 Stop-Transcript
 ```
 
-## Issue
+Now, we just have to make that a one liner and pass it to the `powershell.exe` via `-Command`:
+
+```powershell
+powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -NoProfile -NonInteractive -Command "Start-Transcript -LiteralPath ('{0}\Logs\Download-HiddenPowershell.ps1.log' -f $env:SystemRoot) -IncludeInvocationHeader -Force; $path = ('{0}\UNT' -f $env:SystemRoot); $uri = 'https://raw.githubusercontent.com/UNT-CAS/HiddenPowershell/v1.0/HiddenPowershell.vbs'; Write-Host ('# Path: {0}' -f $path); Write-Host ('# URI: {0}' -f $uri); Write-Host '# Ensure Path Exists ...'; New-Item -Type 'Directory' -Path $path -Force; Write-Host ('# Net.ServicePointManager: {0}' -f [Net.ServicePointManager]::SecurityProtocol); Write-Host '# Setting TLS 1.2 ...'; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Write-Host ('# Net.ServicePointManager: {0}' -f [Net.ServicePointManager]::SecurityProtocol); Write-Host '# Downloading from URI ...'; Invoke-WebRequest -Uri $uri -OutFile ('{0}\HiddenPowershell.vbs' -f $path) -UseBasicParsing -Verbose 4>&1; Stop-Transcript"
+```
+
+Too easy, right? 🤔
+
+# Issue
 
 The problem with deploying this via a GPO Startup Script with [PowerShell's `-Command` parameter](https://docs.microsoft.com/en-us/powershell/scripting/core-powershell/console/powershell.exe-command-line-help) is that **GPO's *Script Parameter* has a limit: 520 characters.**
-This command/script is currently 902 characters and that's just the command; we still have to add the rest of the powershell parameters: `-ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -Command "..."`
-That's 82 addition characters.
+This command/script is currently 972 characters, just counting the parameters.
 
-## Resolution
+# Resolution
 
 There are two ways, that I know of, to reduce the size of this command:
 
@@ -55,7 +62,7 @@ There are two ways, that I know of, to reduce the size of this command:
 
 Let's start trimming things down ...
 
-### PowerShell Command Line parameters
+## PowerShell Command Line parameters
 
 PowerShell's command line parameters follow the same rule shortening as as functions.
 So here's what we want to shorten; 82 characters not including the ellipsis:
@@ -73,7 +80,7 @@ Here's the shortest we can make it; 24 characters not including the ellipsis:
 *Note: The `-Command` parameter is assumed.*
 *Parameter values that have a set list of possible values are auto-completed, just like the parameter name.*
 
-### Adjust Code Using Aliases and Shortened Parameters
+## Adjust Code Using Aliases and Shortened Parameters
 
 If we're going to create an alias:
 
@@ -135,7 +142,7 @@ I switch to using the ellipsis ascii character (`…`; `&#8230;`) instead of thr
 
 *Note: I kept the empty lines in there for keeping a readabile comparison, but I will remove them before proceeding to the next section.*
 
-### Final Command
+## Final Command
 
 So, let's use our command, from the previous section, but reduced down even more; 492 characters:
 
@@ -171,7 +178,7 @@ Now, just put it in GPO's *Script Parameters* field; as shown:
 
 ![GPO Startup Script Properties](https://i.imgur.com/iztADwi.png)
 
-## Notes
+# Notes
 
 - If you don't have room for it, remove the `Stop-Transcript` from the end.
   - It just gives a nice log footer with an *end time*; thus you can calculate total run time, if you so desire.
