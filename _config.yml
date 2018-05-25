@@ -1,1 +1,39 @@
-theme: jekyll-theme-hacker
+title: Figgure IT out!
+description: >
+  The best way to predict the future is to create IT.
+permalink: /:year/:month/:day/:title/
+baseurl: ""
+url: "https://blog.vertigion.com"
+site-twitter: #if your site has a twitter account, enter it here
+
+# Author Settings
+author: VertigoRay
+author-img: //static.vertigion.com/images/Avatar-Negative.png
+about-author: I am Senior System Administrator into Configuration Management, Infrastructure as Code, and new technology. Always hungry to keep learning and developing.
+social-twitter: VertigoRay
+social-facebook: VertigoRay
+social-github: VertigoRay
+social-linkedin: VertigoRay
+social-email: contact_me_b0H9Rg+blog@80.vertigion.com
+
+# Disqus
+discus-identifier: vertigoray
+
+# Tracker
+analytics: UA-20345769-1
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+  - jekyll-gist
+
+paginate: 8
+paginate_path: "/page/:num"
+
+# gist:
+#   noscript: false
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]

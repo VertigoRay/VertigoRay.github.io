@@ -1,16 +1,10 @@
 ---
 layout: post
-title: GPO Startup Script - Practical Download
-date: 2012-02-07 20:46
+title: GPO Startup Script Practical Download
+# date: 0-02-07 20:46
 author: VertigoRay
 comments: true
-categories:
-- Active Directory
-- AD
-- GPO
-- Group Policy
-- posh
-- powershell
+categories: [Group Policy]
 ---
 # GPO Startup Script - Practical Download
 
