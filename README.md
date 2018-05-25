@@ -1,31 +1,27 @@
-# Flexible-Jekyll is a simple and clean theme for Jekyll
+# blog.vertigion.com
 
-![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
+This is the source for [my blog](http://blog.vertigion.com), hosted by [GitHub Pages](https://pages.github.com/).
 
-## Demo
+## Theme
 
-Check the theme in action [Demo](https://artemsheludko.github.io/flexible-jekyll/)
+[Flexible-Jekyll](https://github.com/artemsheludko/flexible-jekyll)
 
-The main page would look like this:
+## Notes
 
-![Main page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/home-page.jpg?raw=true)
+### Setup Dev Env
 
-The post page would look like this:
+**Setup:** [How to Set Up a Jekyll Development Site on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04)
 
-![Post page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/post-example.jpg?raw=true)
+- Setup in WLS Ubuntu.
+- Didn't open firewall.
+- [Nokogiri requires a few more `apt` packages.](http://www.nokogiri.org/tutorials/installing_nokogiri.html#install_with_included_libraries__recommended_)
+  - At the time of this writing: `sudo apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev`
 
-## Features
+Then just need to `cd` into this git repo and run the dev server:
 
-- [Google Fonts](https://fonts.google.com/)
-- [Font Awesome](http://fontawesome.io/)
-- [Disqus](https://disqus.com/)
-- [Analytics](https://analytics.google.com/analytics/web/)
-- Support Emoji
+```bash
+cd vertigoray.github.io
+jekyll serve
+```
 
-## Installation:
-
-Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.
-
-### License
-
-GNU General Public License v3.0
+For simplicity later, I made a bash script in WLS's home: `~/jekyll_serve_vertigoray.github.io.sh`.
