@@ -122,12 +122,12 @@ Stop-Transcript
 ```
 
 Turns out I didn't need to make any aliases.
-If I needed to, I would have done so something like this: `nal w write`.
+If I needed to, I would have done so something like this: `nal w echo`.
 Explained:
 
 - `nal` is an alias for `New-Alias`
 - `w` is my alias name
-- `write` is an alias for `Write-Output`
+- `echo` is an alias for `Write-Output`
   - Yes, it passes through.
 
 I could have shortened the strings even more, but I can only use single quotes inside of the command because the whole command needs to be passed inside of double quotes. There's a few options for a putting a variable in a string; the first option can't be done and the third is the shortest, in this case, so we used it:
@@ -199,8 +199,8 @@ If you don't have room for it, remove the `Stop-Transcript` from the end.
 If you have a longer PowerShell script that you want run on mobile devices, implement something like this:
 
 - Drop the script in a repo.
-  - Public: github.com or gist.github.com work great.
-  - Private: gitlab.com works great. Just make a [Personal Access Token](https://gitlab.com/profile/personal_access_tokens) and [tack it on the end of the URL](https://gitlab.com/help/api/README.md#personal-access-tokens) for the *raw* download, like this:
+  - Public: github.com, gist.github.com, gitlab.com, or gitlab.com/snippets work great.
+  - Private: gitlab.com or gitlab.com/snippets works great. Just make a [Personal Access Token](https://gitlab.com/profile/personal_access_tokens) and [tack it on the end of the URL](https://gitlab.com/help/api/README.md#personal-access-tokens) for the *raw* download, like this:
     - `https://gitlab.com/UNT-CAS/StartupScripts/raw/master/deploy.ps1?private_token=9koXpg98eAheJpvBs5tK`
 - Download the script with the first Startup Script.
   - Be sure to download the *raw* version of the script.
