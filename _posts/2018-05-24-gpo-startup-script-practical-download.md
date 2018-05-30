@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GPO Startup Script - Practical PowerShell Download Command
-img: https://i.imgur.com/p2xdSvp.png
+img: //i.imgur.com/09fzH6l.jpg
 author: VertigoRay
 comments: true
 categories:
