@@ -199,7 +199,7 @@ If you don't have room for it, remove the `Stop-Transcript` from the end.
 If you have a longer PowerShell script that you want run on mobile devices, implement something like this:
 
 - Drop the script in a repo.
-  - Public: github.com, gist.github.com, gitlab.com, or gitlab.com/snippets work great.
+  - Public: github.com, gist.github.com, gitlab.com, gitlab.com/snippets, or pastebin.com work great.
   - Private: gitlab.com or gitlab.com/snippets works great. Just make a [Personal Access Token](https://gitlab.com/profile/personal_access_tokens) and [tack it on the end of the URL](https://gitlab.com/help/api/README.md#personal-access-tokens) for the *raw* download, like this:
     - `https://gitlab.com/UNT-CAS/StartupScripts/raw/master/deploy.ps1?private_token=9koXpg98eAheJpvBs5tK`
 - Download the script with the first Startup Script.
