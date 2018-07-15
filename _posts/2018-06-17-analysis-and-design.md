@@ -6,7 +6,7 @@ author: Raymond Piller
 comments: true
 tags:
 - LTEC5210
-- Information Design
+- Instructional Design
 - Blog
 ---
 At my job with [Computing for Arts & Sciences](httsp://its.cas.unt.edu), I was very recently tasked with coordinating cross-training for my team, the Infrastructure Team. There are four of us on the team, and I wish that meant that we were all working on the same task and objectives. While we do have similar goals in mind, our roles and responsibilities are very different. We basically have four areas of expertise with little crossover. In alphabetical order, they are:

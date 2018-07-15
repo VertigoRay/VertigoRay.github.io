@@ -6,7 +6,7 @@ author: Raymond Piller
 comments: true
 tags:
 - LTEC5210
-- Information Design
+- Instructional Design
 - Blog
 ---
 Visited [EdTech](http://maps.secondlife.com/secondlife/EdTech/120/124/25) and [Caledon Oxbridge](secondlife://Caledon%20Oxbridge/183/145) this week.

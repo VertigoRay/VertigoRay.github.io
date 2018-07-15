@@ -6,7 +6,7 @@ author: Raymond Piller
 comments: true
 tags:
 - LTEC5210
-- Information Design
+- Instructional Design
 - ProjectA
 ---
 After finishing the bulk of the work for [Project A](/2018/06/10/project-1A-description/), I have realized that I did enjoy it.

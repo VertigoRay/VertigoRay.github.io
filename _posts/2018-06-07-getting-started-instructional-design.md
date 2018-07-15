@@ -6,7 +6,7 @@ author: Raymond Piller
 comments: true
 tags:
 - LTEC5210
-- Information Design
+- Instructional Design
 - Blog
 ---
 Every day of my life is filled with learning and observation. After all, I am human.

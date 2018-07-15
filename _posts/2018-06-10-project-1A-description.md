@@ -6,7 +6,7 @@ author: Raymond Piller
 comments: true
 tags:
 - LTEC5210
-- Information Design
+- Instructional Design
 - ProjectA
 ---
 I am a Senior System Administrator at [CAS](https://its.cas.unt.edu) here at [UNT](https://unt.edu).
