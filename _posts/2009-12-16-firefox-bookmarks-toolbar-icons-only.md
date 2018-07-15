@@ -1,5 +1,13 @@
-# Firefox Bookmarks Toolbar: Icons Only
-
+---
+layout: post
+title: Firefox Bookmarks Toolbar: Icons Only
+author: VertigoRay
+img: //i.imgur.com/EGaOxxn.jpg
+comments: true
+tags:
+- Firefox
+- Bookmarks
+---
 Ever want to get rid of the text next to the icons on your bookmarks toolbar in Firefox?
 
 I was looking over a co-workers shoulder the other day and noticed that his bookmarks toolbar had no text next to the icons!!
@@ -14,9 +22,10 @@ toolbar\[mode="icons"\] .toolbarbutton-text {
 
 The file needs to be saved in: `*%AppData%\Mozilla\Firefox\Profile\s########.defaultchrome`
 
-- ######## = 8 random numbers and letters. ie: h98nvfn5
+- `########` = 8 random numbers and letters. ie: `h98nvfn5`
 
-Not sure where your *%AppData%* folder is? Try running the following from the Command Prompt: `echo %AppData%`
+Not sure where your `%AppData%` folder is?
+Try running the following from the Command Prompt: `echo %AppData%`
 
 That should do it!
 

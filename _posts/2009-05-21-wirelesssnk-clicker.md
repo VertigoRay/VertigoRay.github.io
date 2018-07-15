@@ -8,8 +8,6 @@ tags:
 - AutoIt
 - WiFi
 ---
-# WirelessSNK Clicker
-
 The WirelessSNK Clicker is my solution to a deployment issue.
 I needed to automate the configuration of a wireless network.
 
@@ -34,7 +32,7 @@ Some of the alternatives that I found suggested things like installing Daemon To
 They even suggested using AutoIt to automate the install of DaemonTools.
 This was a lot more work than I wanted to do, and since I’m pretty proficient with AutoIt, I decided to do something a little better.
 
-## My Solution
+# My Solution
 
 I wrote an AutoIt script to click OK for me in the two windows that appear.
 Much easier than mounting it and all of that jazz.
