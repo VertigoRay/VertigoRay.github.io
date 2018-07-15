@@ -25,10 +25,11 @@ analytics: UA-20345769-1
 # Build Settings
 markdown: kramdown
 plugins:
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jemoji
-  - jekyll-gist
+- jekyll-sitemap
+- jekyll-paginate
+- jemoji
+- jekyll-gist
+- jekyll-redirect-from
 
 paginate: 8
 paginate_path: "/page/:num"
