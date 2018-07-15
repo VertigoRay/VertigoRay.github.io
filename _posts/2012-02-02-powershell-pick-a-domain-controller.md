@@ -4,7 +4,7 @@ title: PowerShell - Pick a Domain Controller
 date: 2012-02-02 18:02
 author: VertigoRay
 comments: true
-categories: [Domain Controller, Get-ADDomainController, Global Variable, posh, powershell, Scriptin, Uncategorized]
+tags: [Domain Controller, Get-ADDomainController, Global Variable, posh, powershell, Scriptin, Uncategorized]
 ---
 <p>I use a global variable to pick a Domain Controller so that I&rsquo;m not constantly bouncing back and forth between Domain Controllers when running scripts. This helps to mitigate errors due to replication delays (normally, just a few seconds).</p>
 <p>For Example, when you&rsquo;re scripting and try to run <em>Set-ADUser</em> command followed immediately by a <em>Get-ADUser</em> command without specifying the <em>-Server</em> property as the same server for both commands, you may end up setting the change on one server and confirming the change was set (possibly a nano-second later) on a different server. This would lead to your confirmation to return as false.<!-- more --></p>

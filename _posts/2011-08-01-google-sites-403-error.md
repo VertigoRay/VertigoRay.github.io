@@ -4,7 +4,7 @@ title: Google Sites - 403 Error
 date: 2011-08-01 12:26
 author: VertigoRay
 comments: true
-categories: [Uncategorized]
+tags: [Uncategorized]
 ---
 <p>Just added another customer to Google Apps and for some reason their Google Sites page displayed a Forbidden message.  I initially thought it was simply some issue with DNS resolution.  A couple days later when it persisted, I opted to do a little more digging (since DNS issues should self resolve after 24 hours ~max).  I noticed that when I browsed to their Sites admin page (<a href="https://sites.google.com/a/">https://sites.google.com/a/</a><em>domain</em>.com), there was a Forbidden message there as well (meaning it was never DNS related).<!-- more --></p>
 <h2>The Fix</h2>

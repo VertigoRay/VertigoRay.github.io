@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Project A Reflection
-img: //i.imgur.com/ETQQMLQ.jpg
+title: Management and Self-Regulation
 author: Raymond Piller
+img: //i.imgur.com/ETQQMLQ.jpg
 comments: true
 tags:
 - LTEC5210

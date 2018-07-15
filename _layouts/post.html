@@ -30,10 +30,4 @@ layout: main
       {% include disqus.html %}
     </div> <!-- End Wrap Content -->
   </div> <!-- End Page Content -->
-  <div class="post-tags">
-    {% if post %} {% assign tags = post.tags %} {% else %} {% assign tags = page.tags %} {% endif %}
-    {% for tag in tags %}
-    <a href="{{site.baseurl}}/tags/#{{tag|slugify}}">{{tag}}</a>
-    {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
-  </div>
 </article> <!-- End Article Page -->

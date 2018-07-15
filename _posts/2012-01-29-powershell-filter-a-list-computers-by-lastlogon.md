@@ -4,7 +4,7 @@ title: PowerShell - Filter a list Computers by LastLogon Date
 date: 2012-01-29 18:07
 author: VertigoRay
 comments: true
-categories: [Function, posh, powershell, scripting, Uncategorized]
+tags: [Function, posh, powershell, scripting, Uncategorized]
 ---
 <p>I needed a script to filter a list of computers by the number of days since the computer was last logged onto.  This is my solution to that.  When supplied a list of computers, this will return the ones that have been Active (Logged On) within the Last <em>X</em> amount of days.  Where <em>X</em> is supplied as <em>$DaysSinceLastLogon</em>.  I&rsquo;ve populated the PowerShell Comment Doc, so check out the Examples supplied in there for usage.<!-- more --></p>
 <pre class="brush: powershell">&lt;#

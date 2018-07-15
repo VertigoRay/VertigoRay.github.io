@@ -4,7 +4,7 @@ title: iPhone - Task Sync
 date: 2012-02-01 18:02
 author: VertigoRay
 comments: true
-categories: [E-mail, iOS 5, iPhone, Reminders, Send As, Task Sync, Uncategorized]
+tags: [E-mail, iOS 5, iPhone, Reminders, Send As, Task Sync, Uncategorized]
 ---
 <p>Most people are aware of this by now, but I thought I&rsquo;d post a quick follow-up to a <a href="http://go.vertigion.com/iPhoneSendAs" title="iPhone Send As" target="_self">previous post of mine</a> &hellip;</p>
 <p>I have an <a href="http://iphone.com/">iPhone</a> and love it, except for the fact that it&rsquo;s very user friendly. What do I mean? I&rsquo;m more of a technical user. The fact that the <a href="http://iphone.com/">iPhone</a> is so easy to use, makes it hard to do slightly more technical stuff. Some trivial email things that frustrate me:</p>

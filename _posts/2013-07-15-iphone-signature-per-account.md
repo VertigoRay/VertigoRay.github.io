@@ -4,7 +4,7 @@ title: iPhone - Signature per Account
 date: 2013-07-15 23:46
 author: VertigoRay
 comments: true
-categories: [Uncategorized]
+tags: [Uncategorized]
 ---
 <p>I have previously posted about how I have an <a href="http://iphone.com/">iPhone</a> and love it, except for the fact that it&rsquo;s very user friendly. What do I mean? I&rsquo;m more of a technical user. The fact that the <a href="http://iphone.com/">iPhone</a> is so easy to use, makes it hard to do slightly more technical stuff. Some trivial email things that frustrate me:</p>
 <ul><li><strike>No Custom Email Signatures per Account</strike> <img alt="success" height="14" src="http://i.imgur.com/kGWKL.png" width="16" /> Solved!</li>

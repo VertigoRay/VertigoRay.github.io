@@ -4,7 +4,7 @@ title: Bond with Adaptive Load Balancing on Ubuntu Server
 date: 2017-07-11 06:13
 author: VertigoRay
 comments: true
-categories: [Linux]
+tags: [Linux]
 ---
 I was wanting to setup my server with bonded network interface cards (NICs). Since it took me a while to get the bond working, I thought I do some notes to self here; added benefit of sharing with you all.
 

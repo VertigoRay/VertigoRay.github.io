@@ -4,7 +4,7 @@ title: PowerShell - Search Across Multiple Domains in a Forest
 date: 2012-02-07 20:46
 author: VertigoRay
 comments: true
-categories: [Active Directory, AD, Global Catalog, LDAP, posh, powershell, Uncategorized]
+tags: [Active Directory, AD, Global Catalog, LDAP, posh, powershell, Uncategorized]
 ---
 <p>While trying to find a quick answer to search across domains for duplicated user accounts, I came across a blog (sourced) that pointed me in a good direction.  To skip the meat of it, we have a Global Catalog setup on our AD and I found it more useful to target that and search the entire forest, then to attach to each domain individually.  I hope this helps others out there in a similar scenario&hellip;<!-- more --></p>
 <div class="gist"><a href="https://gist.github.com/VertigoRay/6357248">https://gist.github.com/VertigoRay/6357248</a></div>

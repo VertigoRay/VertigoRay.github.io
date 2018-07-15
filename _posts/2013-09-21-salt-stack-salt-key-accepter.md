@@ -4,7 +4,7 @@ title: Salt Stack - salt-key-accepter
 date: 2013-09-21 19:51
 author: VertigoRay
 comments: true
-categories: [Salt Stack, Uncategorized]
+tags: [Salt Stack, Uncategorized]
 ---
 During my <a href="http://go.vertigion.com/AdventuresWithSaltStack">adventures with Salt Stack</a>, I wanted to accept keys automatically on the master. However, I wanted to do this more intelligently than just accepting all of them.
 

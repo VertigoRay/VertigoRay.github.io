@@ -4,7 +4,7 @@ title: Getting Started ...
 date: 2012-01-20 22:43
 author: VertigoRay
 comments: true
-categories: [Chat, Uncategorized]
+tags: [Chat, Uncategorized]
 ---
 I like to play around a lot with different content management systems, and technology. This is all fine and dandy, but has made me realize that I have a problem ...
 

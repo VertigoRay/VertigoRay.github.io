@@ -4,7 +4,7 @@ title: Salt Stack - salt-grains-environment
 date: 2013-09-10 21:53
 author: VertigoRay
 comments: true
-categories: [Apple, Salt Stack, Uncategorized]
+tags: [Apple, Salt Stack, Uncategorized]
 ---
 <p>During my <a href="http://go.vertigion.com/AdventuresWithSaltStack">adventures with Salt Stack</a>, I was having issues wrapping my head around how I was going to control what environment my dev machines were in.  I even thought that pillar[environment] returning None <a href="https://github.com/saltstack/salt/issues/7088" target="_blank">was a bug</a>.  Turns out, I just needed to think more about what process would work in my environment.<!-- more --></p>
 <p>To solve this, I have created a very simple custom grain file that would store and set the our `dev` and `pre` environments.</p>

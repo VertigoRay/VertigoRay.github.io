@@ -4,7 +4,7 @@ title: PowerShell - Random Color
 date: 2012-02-15 17:03
 author: VertigoRay
 comments: true
-categories: [Colors, posh, powershell, scripting, Uncategorized]
+tags: [Colors, posh, powershell, scripting, Uncategorized]
 ---
 <p>Just messing around here, but thought others might want to know how to randomly (or intelligently) grab a color.  There&rsquo;s basically three parts to this process.</p>
 <ol><li>Get the number of colors.</li>

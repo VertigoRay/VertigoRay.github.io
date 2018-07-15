@@ -4,7 +4,7 @@ title: GPO - Not Applying User Policy
 date: 2013-09-05 23:09
 author: VertigoRay
 comments: true
-categories: [Active Directory, group policy, Uncategorized]
+tags: [Active Directory, group policy, Uncategorized]
 ---
 <p>We spent the day working on an issue where our User Policy wasn&rsquo;t being applied to the User AD Object logging into a computer. <span>We confirmed the usual steps:</span></p>
 <ul><li>User AD Object is in the OU where the GPO is applied.</li>

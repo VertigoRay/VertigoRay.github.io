@@ -4,7 +4,7 @@ title: Google Chrome - Block Flash (& all plug-ins) without an Extension
 date: 2012-01-25 03:52
 author: VertigoRay
 comments: true
-categories: [Chrome, Flash, Java, Plug-ins, QuickTime, Silverlight, Uncategorized]
+tags: [Chrome, Flash, Java, Plug-ins, QuickTime, Silverlight, Uncategorized]
 ---
 <p>I&rsquo;ve been using <a href="http://www.google.com/chrome" title="Google Chrome" target="_blank">Google Chrome</a> instead of <a href="http://firefox.com" title="Firefox" target="_blank">Firefox</a> for quite a while.  I moved mostly for the simpler functionality and aesthetics.  When I first jumped ship there were not a lot of extensions available for <a href="http://www.google.com/chrome" title="Google Chrome" target="_blank">Google Chrome</a>, but that quickly became a non-issue as many extension developers ported their stuff over.</p>
 <p>Getting to the point, today I was leaning over a co-workers shoulder and saw his flash blocker icon in on his toolbar and it reminded me that I used to use the extension in <a href="http://firefox.com" title="Firefox" target="_blank">Firefox</a>, but never re-checked for it after my initial set-up.  As I was trying to determine which of the two top-rated <a href="http://chrome.google.com/webstore/search/flash%20block" title="Flash Block Extensions" target="_blank">Flash Block extensions</a> I wanted to use, I read <a href="http://bit.ly/wBRva7" title="Chrome Review" target="_blank">a review (dated: May 5, 2011)</a> stating that <a href="http://www.google.com/chrome" title="Google Chrome" target="_blank">Google Chrome</a> will block flash natively.</p>

@@ -4,7 +4,7 @@ title: PowerShell - Get Computers by Last Logged on User via SCCM
 date: 2012-01-28 18:05
 author: VertigoRay
 comments: true
-categories: [Function, posh, powershell, scripting, Uncategorized]
+tags: [Function, posh, powershell, scripting, Uncategorized]
 ---
 <p>I needed a versatile script to query SCCM and return the list of computers associated with that user.  This is my solution to that.  It simply queries SCCM for the list of computer’s whose last logged on user matches the supplied SamAccountName.  I&rsquo;ve populated the PowerShell Comment Doc, so check out the Examples supplied in there for usage.<!-- more --></p>
 <div class="gist"><a href="https://gist.github.com/VertigoRay/6343964">https://gist.github.com/VertigoRay/6343964</a></div>

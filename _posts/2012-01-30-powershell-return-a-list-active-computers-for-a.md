@@ -4,7 +4,7 @@ title: PowerShell - Return a list Active Computers for a Department/OU
 date: 2012-01-30 18:03
 author: VertigoRay
 comments: true
-categories: [Function, posh, powershell, scripting, Uncategorized]
+tags: [Function, posh, powershell, scripting, Uncategorized]
 ---
 <p>I needed a script that would return a list active computers for a supplied department or OU (basically the same thing in my use case).  This is my solution to that.  When supplied a list of Dept abbreviation (OU Name), this function will query AD for all enabled user accounts in the Departments OU.  Then it will run the list of users accounts through the <a href="http://go.vertigion.com/PowerShell-Get-CompByUser" title="PowerShell: Get-CompByUser" target="_self">Get-CompByUser</a> function.  The list of computers is then run through <a href="http://go.vertigion.com/PowerShell-Get-CompByActivity" title="PowerShell: Get-CompByActivity" target="_self">Get-CompByActivity</a> to return only active computers.  The actual targetted out will simply be a combination of $Dept and $OUBase parameters:  &quot;OU=$Dept,$OUBase&quot;.  I&rsquo;ve populated the PowerShell Comment Doc, so check out the Examples supplied in there for usage.<!-- more --></p>
 <pre class="brush: powershell">&lt;#

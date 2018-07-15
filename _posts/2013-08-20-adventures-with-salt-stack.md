@@ -4,7 +4,7 @@ title: Adventures with Salt Stack
 date: 2013-08-20 19:15
 author: VertigoRay
 comments: true
-categories: [Active Directory, Apple, GPO, OSX, Salt Stack, Uncategorized]
+tags: [Active Directory, Apple, GPO, OSX, Salt Stack, Uncategorized]
 ---
 <p>I have been in IT for over 15 years. most of that tenure has been managing Windows - mostly in the Desktop/Laptop realm. This means that I’ve got a lot of experience with AD, GPO, SCCM, scripting, etc.</p>
 <p>Recently, I took over the management of Apple Desktops/Laptops for the organization that I work for. Before now, Apples were the outlier — just give the user admin rights and good luck. Now that it’s my purview, I’m opting for more centralized management technique. Something to, as closely as possible, mimic GPO (for managing settings) and SCCM (for managing software) for Windows.<!-- more --></p>

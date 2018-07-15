@@ -4,7 +4,7 @@ title: Installing and configuring Munki with Puppet
 date: 2013-07-25 22:56
 author: VertigoRay
 comments: true
-categories: [Uncategorized]
+tags: [Uncategorized]
 ---
 <p>&ldquo;<a href="http://projects.puppetlabs.com/projects/puppet" title="Puppet" target="_blank">Puppet</a> is a powerful system administration tool for Macs. But <a href="http://code.google.com/p/munki/" title="Munki" target="_blank">Munki</a> is better at managing software packages. Do the smart thing and use puppet to deploy and configure Munki on your Mac clients.&rdquo; &ndash; <a href="http://seeskill.wordpress.com/author/cilefen/" title="Chris McCafferty" target="_blank">Chris McCafferty</a></p>
 <p>I couldn&rsquo;t have said it better myself. Thanks for the recipe! <span>Here&rsquo;s my version of the same solution &hellip;</span><!-- more --></p>

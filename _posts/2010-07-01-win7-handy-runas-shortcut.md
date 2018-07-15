@@ -4,7 +4,7 @@ title: Win7 Handy RunAs Shortcut
 date: 2010-07-01 21:00
 author: VertigoRay
 comments: true
-categories: [Uncategorized, Win7]
+tags: [Uncategorized, Win7]
 ---
 <p>Maybe I’m just late in the game on this one, but I thought I would share this incredibly useful Win7 shortcut when running things as a different user. This really only applies when you&rsquo;re on a Win7 computer bound to a domain, but read on and enjoy &hellip;<!-- more --><br /><br /> When running something as a different user in Win7, you are prompted, as shown:</p>
 <div>

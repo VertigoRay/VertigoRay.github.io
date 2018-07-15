@@ -4,7 +4,7 @@ title: GPO Startup Script - Practical PowerShell Download Command
 img: //i.imgur.com/09fzH6l.jpg
 author: VertigoRay
 comments: true
-categories:
+tags:
 - GPO
 - Group Policy
 - POSH

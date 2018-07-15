@@ -4,7 +4,7 @@ title: Mozilla Maintenance Service
 date: 2012-10-15 19:42
 author: VertigoRay
 comments: true
-categories: [deployment, mozilla, Uncategorized]
+tags: [deployment, mozilla, Uncategorized]
 ---
 <p>So &hellip; I finally got around to removing the <em>Mozilla Maintenance Service</em> from my deployment of <em>Firefox</em>.  It was pretty easy, but surprisingly unexplored by the blogging community.  I&rsquo;m by no means calling first on this post, just saying I did it through self-discovery.<!-- more --></p>
 <p><strong>Why would I want to remove this service?</strong>  Quite simply, we have an automated process for our current roll out of <em>Firefox</em> updates.  <em>Mozilla Maintenance Service</em> is a long overdue, but unnecessary feature for my infrastructure.  Additionally, I don&rsquo;t like things being installed arbitrarily.  <em>I may investigate if I would rather use this service for silent updates of Firefox in the future.</em></p>

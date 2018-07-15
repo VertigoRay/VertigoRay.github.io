@@ -4,7 +4,7 @@ title: SCCM - Query/Collection by MSI Installed
 date: 2012-02-22 18:03
 author: VertigoRay
 comments: true
-categories: [Active Directory, AD, Collections, Java, MSI, SCCM, Uncategorized]
+tags: [Active Directory, AD, Collections, Java, MSI, SCCM, Uncategorized]
 ---
 <p>Most of the time, when adding an SCCM Collection based on installed software, I&rsquo;ll simply use the <em>Add/Remove Programs</em> Attribute Class.  However, in a recent case, the installed software doesn&rsquo;t show up in <em>Add/Remove Programs</em>, but it is an MSI installer.  In this particular instance, I wanted to remove the Java Updater.<!-- more --></p>
 <p>Since approximately 1.6.18 / 6.0 update 18, Oracle (formerly Sun) has included Java Auto Updater as a separate package that is automatically installed with the JRE <a href="http://wpkg.org/Java#JRE_6_Update_18_and_Newer" title="wpkg.org" target="_blank">[ref]</a>.  This makes it really easy to remove:</p>

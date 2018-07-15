@@ -4,7 +4,7 @@ title: Salt Stack - salt-osx-grains
 date: 2013-08-22 21:40
 author: VertigoRay
 comments: true
-categories: [Apple, Salt Stack, Uncategorized]
+tags: [Apple, Salt Stack, Uncategorized]
 ---
 <p>During my <a href="http://go.vertigion.com/AdventuresWithSaltStack">adventures with Salt Stack</a>, I found that the <a href="http://docs.saltstack.com/topics/targeting/grains.html" target="_blank">grains</a> lacked a couple of key bits on information for OS X:</p>
 <ul><li><a href="http://bit.ly/189M2So" target="_blank">Apple Model Number</a></li>

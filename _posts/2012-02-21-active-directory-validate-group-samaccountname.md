@@ -4,7 +4,7 @@ title: Active Directory - Validate Group SamAccountName
 date: 2012-02-21 21:34
 author: VertigoRay
 comments: true
-categories: [Active Directory, AD, posh, powershell, RegEx, Regular Expression, Uncategorized]
+tags: [Active Directory, AD, posh, powershell, RegEx, Regular Expression, Uncategorized]
 ---
 <p>Did a lot of digging to find the details needed so that I can write a Reg Ex to validate an AD Group SamAccountName.  Here&rsquo;s what I got and I wanted to share &hellip;<!-- more --></p>
 <pre>(^[^. ""/\[]:|\+=;?*][^""/\[]:|\+=;?*]{1,63})(?(1)|[^.]$)</pre>
