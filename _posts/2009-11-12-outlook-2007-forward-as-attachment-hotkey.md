@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Outlook 2007: Forward As Attachement Hotkey
+title: 'Outlook 2007: Forward As Attachement Hotkey'
 author: VertigoRay
 img: //i.imgur.com/tS01GIT.jpg
 comments: true

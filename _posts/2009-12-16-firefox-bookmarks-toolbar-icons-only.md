@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Firefox Bookmarks Toolbar: Icons Only
+title: 'Firefox Bookmarks Toolbar: Icons Only'
 author: VertigoRay
 img: //i.imgur.com/EGaOxxn.jpg
 comments: true
