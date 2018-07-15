@@ -7,7 +7,7 @@ comments: true
 tags:
 - LTEC5210
 - Instructional Design
-- Blog
+- Reflection
 ---
 Visited [EdTech](http://maps.secondlife.com/secondlife/EdTech/120/124/25) and [Caledon Oxbridge](secondlife://Caledon%20Oxbridge/183/145) this week.
 Caledon was very immersive, but [I didn't land in a good spot at first](http://slurl.com/secondlife/Caledon%20Oxbridge%20Village/174/61/36).

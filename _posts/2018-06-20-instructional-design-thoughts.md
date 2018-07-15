@@ -7,7 +7,7 @@ comments: true
 tags:
 - LTEC5210
 - Instructional Design
-- Blog
+- Reflection
 ---
 I often write technical documentation and *readme* files for work that I'm doing.
 I often spend as much time, if not more, writing these documents as I spend doing the work.

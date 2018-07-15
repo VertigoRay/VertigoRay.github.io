@@ -1,9 +1,14 @@
 ---
 layout: post
-title: SaltStack - Google+ - SaltStack support for #OSX and #Windows doesn't always
-date: 2013-09-12 15:08
+title: 'SaltStack - Google+ - SaltStack support for #OSX and #Windows doesn't always'
 author: VertigoRay
+date: 2013-09-12 15:08
+img: //i.imgur.com/qjt7Sk5.jpg
 comments: true
-tags: [Link, Salt Stack, Uncategorized]
+tags:
+- Link
+- SaltStack
 ---
-<a href='https://plus.google.com/112856352920437801867/posts/1hSB3MvGAbk'>SaltStack - Google+ - SaltStack support for #OSX and #Windows doesn't always</a><div class="link_description"><p>I&rsquo;m internet famous! :)</p></div>
+[SaltStack - Google+ - SaltStack support for #OSX and #Windows doesn't always](https://plus.google.com/112856352920437801867/posts/1hSB3MvGAbk)
+
+I'm internet famous! :)

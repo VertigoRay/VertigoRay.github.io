@@ -7,7 +7,7 @@ comments: true
 tags:
 - LTEC5210
 - Instructional Design
-- Blog
+- Reflection
 ---
 Opinions are like noses, everyone has one, and they often stick them where they are unwanted.
 

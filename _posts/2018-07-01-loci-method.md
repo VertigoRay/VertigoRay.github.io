@@ -7,7 +7,7 @@ comments: true
 tags:
 - LTEC5210
 - Instructional Design
-- Blog
+- Reflection
 ---
 
 > Activity 6: Blog Reflection
