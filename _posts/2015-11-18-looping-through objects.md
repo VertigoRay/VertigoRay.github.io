@@ -134,7 +134,7 @@ $hash.Keys | ForEach-Object {
 
 # PSObject
 
-I'll cover a couple of options, but they'll use the same variable:
+I'll cover a couple of options, and they'll use the same variable structure as the hashtable:
 
 ```powershell
 $pso = New-Object PSObject                                       
