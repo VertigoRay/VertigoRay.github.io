@@ -13,9 +13,11 @@ First thing you need to do is determine what kind of object you're dealing with
 
 - [Array](#array)
 - [Hashtable](#hashtable)
-    - [Option 1: GetEnumerator()](#option-1-getenumerator)
-    - [Option 2: Keys](#option-2-keys)
+    - [Use `GetEnumerator()`](#use-getenumerator)
+    - [Use `Keys`](#use-keys)
 - [PSObject](#psobject)
+    - [Use `PSObject.Properties`](#use-psobjectproperties)
+    - [Practical Example](#practical-example)
 - [Additional information](#additional-information)
 
 *Note: if it's anything besides the above types, it's like a child of a PSObject, and you can use that method.*
@@ -62,7 +64,7 @@ $arr | ForEach-Object {
 # Hashtable
 
 [*I originally posted this on stackoverflow.*](https://stackoverflow.com/a/16175967/615422)
-I'll cover a few options, but they'll use the same variable:
+I'll cover a couple of options, but they'll use the same variable:
 
 ```powershell
 $hash = @{
@@ -72,7 +74,7 @@ $hash = @{
 }
 ```
 
-## Option 1: GetEnumerator()
+## Use `GetEnumerator()`
 
 *Note: personal preference; syntax is easier to read for someone that's new to PowerShell.*
 
@@ -102,7 +104,7 @@ $hash.GetEnumerator() | ForEach-Object {
 
 *Same output as previous example.*
 
-## Option 2: Keys
+## Use `Keys`
 
 The Keys method would be done as shown:
 
@@ -132,6 +134,53 @@ $hash.Keys | ForEach-Object {
 
 # PSObject
 
+I'll cover a couple of options, but they'll use the same variable:
+
+```powershell
+$pso = New-Object PSObject                                       
+$Object | Add-Member NoteProperty a 1
+$Object | Add-Member NoteProperty b 2
+$Object | Add-Member NoteProperty c 3
+```
+
+That's kind of a pain, so I'll show you an easier way that been available since PowerShell 2.0:
+
+```powershell
+$pso = New-Object PSObject -Property @{
+    a = 1
+    b = 2
+    c = 3
+}
+```
+
+## Use `PSObject.Properties`
+
+The `PSObject` property is available, albeit hidden, on all PS Objects.
+
+```powershell
+foreach ($item in $pso.PSObject.Properties) {
+    Write-Host "$($item.Name): $($item.Value)"
+}
+```
+
+**Output:**
+
+```powershell
+c: 3
+b: 2
+a: 1
+```
+
+**`ForEach-Object` example:**
+
+```powershell
+$pso.PSObject.Properties | ForEach-Object {
+    Write-Host "${_}: $($hash.Item($_))"
+}
+```
+
+## Practical Example
+
 [*I originally posted this on stackoverflow.*](https://stackoverflow.com/a/33792068/615422)
 
 I'm not sure how early of a version you can do this, but it works for me in PowerShell 5.1 ... feel free to give it a try in earlier versions:
@@ -156,7 +205,7 @@ org: AS589 University of North Texas
 postal: 76203
 ```
 
-*This is all done with POSH 4.0; `ConvertTo-Json` and `ConvertFrom-Json` were introduced in POSH 3.0; I haven't tested POSH 3.0 or 5.0.*
+*This example was originally done with POSH 4.0; `ConvertTo-Json` and `ConvertFrom-Json` were introduced in POSH 3.0. I haven't tested POSH 3.0. I have tested in PowerShell 5.0 and 5.1; I got the same output.*
 
 **`ForEach-Object` example:**
 
