@@ -26,8 +26,8 @@ This was the only time you will see a percent sign in this post.
 
 In scripts, I prefer to use `foreach` instead of `ForEach-Object`.
 Unless, of course, there's a speed benefit; such as using workflows, executing commands across several computers, etc.
-Mostly, this is because readability is lost by using the automatic, implied `$_` variable.
-
+[Speed increases aren't always realized.](https://gist.github.com/VertigoRay/3bb0166d6a877839b420)
+Regardless, my decision is because readability is lost by using the automatic, implied `$_` variable.
 
 # Array
 
