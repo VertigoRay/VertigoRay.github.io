@@ -34,7 +34,7 @@ Mostly, this is because readability is lost by using the automatic, implied `$_`
 Arrays are pretty simple, but I'll cover them anyway for thoroughness.
 
 ```powershell
-[array] $arr = @(1, 2, 3)                      1
+[array] $arr = @(1, 2, 3)
 
 foreach ($item in $arr) {
     Write-Host "Item: ${item}"
