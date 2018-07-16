@@ -60,8 +60,6 @@ You will also raise your self-confidence, as you recognize your own ability and 
 
 # Communication
 
-> How important is communication in this process and what helps/impedes it?
-
 The ability to communicate effectively is one of the most important skills you can hone.
 I recently *was forced* to read *[Crucial Conversations](https://amzn.to/2uAsgOZ)* by my job.
 It wasn't something against me personally, we read it as a team and did several group discussions about the topics in the book.
