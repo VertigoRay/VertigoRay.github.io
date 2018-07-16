@@ -225,15 +225,15 @@ Be careful sorting your hashtable...
 ```powershell
 PS> $hash.GetType()
 
-IsPublic IsSerial Name                                     BaseType
--------- -------- ----                                     --------
-True     True     Hashtable                                System.Object
+IsPublic IsSerial Name      BaseType
+-------- -------- ----      --------
+True     True     Hashtable System.Object
 
 
 PS> $hash = $hash.GetEnumerator() | Sort-Object Name
 PS> $hash.GetType()
 
-IsPublic IsSerial Name                                     BaseType
--------- -------- ----                                     --------
-True     True     Object[]                                 System.Array
+IsPublic IsSerial Name     BaseType
+-------- -------- ----     --------
+True     True     Object[] System.Array
 ```
