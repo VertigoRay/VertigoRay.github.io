@@ -2,7 +2,7 @@
 layout: post
 title: Loop Through Objects
 author: Raymond Piller
-img: //i.imgur.com/ETQQMLQ.jpg
+img: //i.imgur.com/OGS4h59.jpg
 comments: true
 tags:
 - PowerShell
