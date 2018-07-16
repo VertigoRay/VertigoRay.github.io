@@ -183,8 +183,6 @@ $pso.PSObject.Properties | ForEach-Object {
 
 [*I originally posted this on stackoverflow.*](https://stackoverflow.com/a/33792068/615422)
 
-I'm not sure how early of a version you can do this, but it works for me in PowerShell 5.1 ... feel free to give it a try in earlier versions:
-
 ```powershell
 $ipinfo = Invoke-WebRequest 'http://ipinfo.io/json' -UseBasicParsing | ConvertFrom-Json
 foreach ($info in $ipinfo.PSObject.Properties) {
@@ -210,7 +208,7 @@ postal: 76203
 **`ForEach-Object` example:**
 
 ```powershell
-$ipinfo.PSObject.Properties | ForEach-Object {
+(Invoke-WebRequest 'http://ipinfo.io/json' -UseBasicParsing | ConvertFrom-Json).PSObject.Properties | ForEach-Object {
     Write-Host "$($_.Name): $($_.Value)"
 }
 ```
