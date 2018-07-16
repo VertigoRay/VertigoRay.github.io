@@ -11,9 +11,12 @@ tags:
 Looping through objects can be a pain, until you know what you're doing.
 First thing you need to do is determine what kind of object you're dealing with
 
-- `[Array]`; includes `[ArrayList]`.
-- `[Hashtable]`
-- `[PSObject]`, `[PSCustomeObject]`, et al.
+- [Array](#array)
+- [Hashtable](#hashtable)
+    - [Option 1: GetEnumerator()](#option-1-getenumerator)
+    - [Option 2: Keys](#option-2-keys)
+- [PSObject](#psobject)
+- [Additional information](#additional-information)
 
 *Note: if it's anything besides the above types, it's like a child of a PSObject, and you can use that method.*
 
