@@ -164,21 +164,21 @@ Username    : admin.xxxxxxxx
 Sessionname :
 Id          : 2
 State       : Disconnected
-IdleTime    : 07/01/2018 16:49:14
+IdleTime    : 07/25/2017 16:24:48
 LogonTime   : 07/20/2017 13:19:00
 
 Username    : admin.xxxxx
 Sessionname : rdp-tcp#54
 Id          : 3
 State       : Active
-IdleTime    : 07/16/2018 17:02:47
+IdleTime    : 08/09/2017 16:38:21
 LogonTime   : 07/21/2017 05:35:00
 
 Username    : xxxxxxxx
 Sessionname :
 Id          : 4
 State       : Disconnected
-IdleTime    : 07/10/2018 17:00:16
+IdleTime    : 08/03/2017 16:35:50
 LogonTime   : 07/21/2017 09:25:00
 
 Username    : vertigoray
