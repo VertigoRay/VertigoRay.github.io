@@ -20,9 +20,9 @@ When I think about managing others, I think about a common phrase:
 
 > Management is babysitting for adults.
 
-Of course, [Sue](https://www.linkedin.com/pulse/youre-manager-babysitter-you-want-high-performance-treat-sue-bingham/) might argue with me on this, but it's obviously true or she wouldn't have written an compelling argument against it.
-I'm going to start with saying that I don't think you should treat your employees as children.
-However, some employees give you now choice.
+Of course, [Sue](https://www.linkedin.com/pulse/youre-manager-babysitter-you-want-high-performance-treat-sue-bingham/) might argue with me on this, but it's obviously true or she wouldn't have written a compelling argument against it.
+I'm going to start by saying that I don't think you should treat your employees as children.
+However, some employees give you no choice.
 You should treat people the way you would want to be treated -- better yet, the way they want to be treated.
 That is, of course, until they show you that they can't be treated that way anymore.
 Then you treat that person the way he/she needs to be treated until he/she has turned him/herself around.
@@ -50,11 +50,11 @@ Goals should be specific, measurable, attainable, relevant, and time-bound.
 *Yes, I've recently studied SMART goals.*
 
 > Setting goals give you long-term vision and short-term motivation.
-> It focuses your studying of knowledge, and helps you to organize your time and your resources so that you can make the most of your life.
+> It focuses your studying of knowledge and helps you to organize your time and your resources so that you can make the most of your life.
 
 *Sounds a lot like self-management, doesn't it?*
 By setting sharp, clearly defined goals, you can measure and take pride in the achievement of those goals.
-Setting both short and long-term goals that are relvant to a path, will aid you in attaining those long-term goals.
+Setting both short and long-term goals that are relevant to a path, will aid you in attaining those long-term goals.
 You'll see forward progress in what might previously have seemed a long pointless grind.
 You will also raise your self-confidence, as you recognize your own ability and competence in achieving the goals that you've set.
 
@@ -70,14 +70,14 @@ It was, by far, the best self-improvement book that I've read in a long time, an
 In order to accomplish your personal goals, you will *likely* need to communicate with people.
 However, communicating is one of the most feared skills a human possess.
 That's where *Crucial Conversations* comes in.
-It was pivotol for me learning how to analyze a conversation as it was happening.
+It was pivotal for me in learning how to analyze a conversation as it was happening.
 I mean, I'm not perfect at doing it yet, but I have already started applying it ... *shhh, don't tell my wife*.
 Managing a team is that much more strenuous on your communication skills.
 
 Being able to communicate well with your will change your life.
-Good communication skills doesn't always mean that your nice.
+Good communication skills don't always mean that you're nice.
 It means that you are able to keep a conversation safe and productive at the same time.
 When it's a *crucial* conversation, it becomes significantly harder to do.
 Most people allow their emotions to get in their way.
 However, this cannot happen if you truly intend on reaching your goals.
-You will need to grab the reigns on your emotions and masterfully steer your way through a potentially dificult conversation.
+You will need to grab the reigns of your emotions and masterfully steer your way through a potentially difficult conversation.
