@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Query Terminal Server Sessions
-author: Raymond Piller
+author: VertigoRay
 img: //i.imgur.com/OGS4h59.jpg
 comments: true
 tags:
@@ -10,6 +10,10 @@ tags:
 ---
 I wanted a quick way to get a list of user sessions on our VDI servers.
 My exact goal was to get a list of users that were a day away from being forced off the system and sending them an email.
+
+**TLDR**: I ended up making this into a module: [QuserObject](/2018/07/22/quserobject).
+
+# Walkthrough
 
 Anyway, down to business.
 We can use [Quser](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754583(v=ws.11)) to get the information.
@@ -189,5 +193,8 @@ IdleTime    :
 LogonTime   : 08/09/2017 16:40:00
 ```
 
+# Conclusion
+
 I bit more complex, but still beautiful, right?
-I'll have to turn that into a module for ease of use.
+~~I'll have to turn that into a module for ease of use.~~
+I ended up making this into a module: [QuserObject](/2018/07/22/quserobject).
