@@ -12,6 +12,7 @@ tags:
 - OU
 - posh
 - powershell
+redirect_from: /post/18075217070
 ---
 After starting work on a function, I stumbled across [a StackOverflow article](http://stackoverflow.com/a/9399292/615422) and wanted to expand on that post.
 
