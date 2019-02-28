@@ -10,7 +10,7 @@ tags:
 ---
 There are many ways to skin a cat, and with PowerShell, that's no exception. This blog will show you three ways that I'm familiar with.
 
-# `Test-Path`
+# Test-Path
 
 This is probably the most common, and works well for a quick and simple solution.
 
@@ -67,7 +67,7 @@ PS > Test-Path 'C:\Temp\bar*'
 False
 ```
 
-# `[System.IO.File]::Exists()`
+# [System.IO.File]::Exists()
 
 :notebook:
 `[System]` is the default root type, so things like `[System.String]` can be shortcutted to `[String]`.
@@ -87,7 +87,7 @@ True
 
 Wildcard tests are not supported by this .NET method.
 
-# `[System.IO.FileInfo]`
+# [System.IO.FileInfo]
 
 :notebook:
 `[System]` is the default root type, so things like `[System.String]` can be shortcutted to `[String]`.
