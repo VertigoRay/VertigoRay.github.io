@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PowerShell: Check if a File Exists 
+title: 'PowerShell: Check if a File Exists'
 author: VertigoRay
 img: //i.imgur.com/OGS4h59.jpg
 comments: true
