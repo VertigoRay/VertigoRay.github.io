@@ -157,7 +157,7 @@ LastWriteTimeUtc  : 2/27/2019 1:57:33 PM
 Attributes        : Archive
 ```
 
-Additionaly, `DirectoryName` is a `[String]`, but `Directory` is a `[IO.DirectoryInfo]` type:
+Additionaly, `DirectoryName` is a `[String]`, but `Directory` is an `[IO.DirectoryInfo]` type:
 
 ```powershell
 PS > $foo.Directory | Select-Object *
@@ -182,7 +182,7 @@ LastWriteTimeUtc  : 2/27/2019 2:33:30 PM
 Attributes        : Directory
 ```
 
-Also, that object's `Parent` property is also a `[IO.DirectoryInfo]` type:
+Also, that object's `Parent` property is also an `[IO.DirectoryInfo]` type:
 
 ```powershell
 PS > $foo.Directory.Parent | Select-Object *
