@@ -8,11 +8,11 @@ tags:
 - PowerShell
 - PoSh
 ---
-There are many ways to skin a cat, and with powershell, that's no exception. This blog will show you three way that I'm familiar with.
+There are many ways to skin a cat, and with PowerShell, that's no exception. This blog will show you three ways that I'm familiar with.
 
 # `Test-Path`
 
-This is probably the most common, and works will for a quick and simple solution.
+This is probably the most common, and works well for a quick and simple solution.
 
 ```powershell
 PS > Remove-Item 'C:\Temp\*'
@@ -25,7 +25,7 @@ True
 ```
 
 I prefer quotes around strings like paths for cleanliness and readability in scripts, but you don't need the quotes around the path names on any of those commands.
-I don't use quotes in the commandline for speed. Powershell is expecting a string so it'll figure it out:
+I don't use quotes in the command line for speed. Powershell is expecting a string so it'll figure it out:
 
 ```powershell
 PS > Remove-Item C:\Temp\*
@@ -73,7 +73,7 @@ False
 `[System]` is the default root type, so things like `[System.String]` can be shortcutted to `[String]`.
 I'll be shortcutting `[System.IO.File]` to just `[IO.File]`.
 
-An alternative you can use is the `[System.IO.File]::Exists()` which access the .NET method. This is the simplest execution, and I'm not really sure why you'd use this over `Test-Path`, but it's here for thoroughness.
+An alternative you can use is the `[System.IO.File]::Exists()` which access the .NET method. This is the simplest (aka least feature rich) test, and I'm not really sure why you'd use this over `Test-Path`. However, it's here for completeness.
 
 ```powershell
 PS > Remove-Item C:\Temp\*
@@ -85,7 +85,7 @@ PS > [System.IO.File]::Exists('C:\Temp\foo.txt')
 True
 ```
 
-Wildcard tests are not supported with this .NET method.
+Wildcard tests are not supported by this .NET method.
 
 # `[System.IO.FileInfo]`
 
@@ -93,7 +93,7 @@ Wildcard tests are not supported with this .NET method.
 `[System]` is the default root type, so things like `[System.String]` can be shortcutted to `[String]`.
 I'll be shortcutting `[System.IO.FileInfo]` to just `[IO.FileInfo]`.
 
-Using the `[IO.FileInfo]` type is my personal preference when working with files because it give me a ton of information about the file with a single call.
+Using the `[IO.FileInfo]` type is my personal preference when working with files because it gives me a ton of information about the file with a single call.
 Information that I would have to use a host of tools to get, including:
 
 - `Get-Item`
@@ -116,7 +116,7 @@ PS > $foo.Exists
 True
 ```
 
-Using the `[IO.FileInfo]` type, you have the added benefit of a bunch of additional file information; go figgure:
+Using the `[IO.FileInfo]` type, you have the added benefit of a bunch of additional file information; go figure:
 
 ```powershell
 PS > $foo | Select-Object *
@@ -208,7 +208,7 @@ Attributes        : Hidden, System, Directory
 ```
 
 Sure, you could just `cd ..` to get up a directory and get higher level information.
-What if you're programatically looking through files at a location that's not your present working directory (`$pwd`)?
+What if you're programmatically looking through files at a location that's not your present working directory (`$pwd`)?
 You can easily pull the file's version of `cd ..` with this:
 
 ```powershell
