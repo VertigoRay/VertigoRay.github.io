@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PowerShell Check File Exists 
+title: PowerShell: Check if a File Exists 
 author: VertigoRay
 img: //i.imgur.com/OGS4h59.jpg
 comments: true
@@ -8,7 +8,8 @@ tags:
 - PowerShell
 - PoSh
 ---
-There are many ways to skin a cat, and with PowerShell, that's no exception. This blog will show you three ways that I'm familiar with.
+There are many ways to skin a cat, and with PowerShell, that's no exception.
+I'm going to show you three ways that I'm familiar with to ~~skin~~ check if a file exists.
 
 # Test-Path
 
