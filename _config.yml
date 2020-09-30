@@ -35,6 +35,9 @@ plugins:
 paginate: 8
 paginate_path: "/page/:num"
 
+feed:
+  posts_limit: 999
+
 # gist:
 #   noscript: false
 
